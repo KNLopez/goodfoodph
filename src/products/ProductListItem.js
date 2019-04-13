@@ -28,7 +28,7 @@ class ProductListItem extends Component {
           </div>
           <div className="product-info">
             <h4>{this.props.name}</h4>
-            <p>{this.props.price}</p>
+            <p>₱{this.props.price}</p>
             <button onClick={()=>{this.props.addToCart(this.props.id)}}> Add to Cart </button>
           </div>
         </div>

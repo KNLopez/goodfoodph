@@ -22,7 +22,7 @@ export class CheckoutSummary extends Component {
         { items }
         <div className="total">
         <h3>Total</h3>
-        <h2>{ this.props.total }</h2>
+        <h2>₱{ this.props.total }</h2>
         </div>
       </div>
     )

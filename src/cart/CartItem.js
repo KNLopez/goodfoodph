@@ -24,7 +24,7 @@ export class CartItem extends Component {
               <input type="text" onChange={(e)=>this.handleChange(e)} value={this.props.qty} />
               <button className="cart-controls__button" onClick={()=>{this.quantityChange(1 , this.props.id)}}>+</button>
              </div>
-             <div className="price">{this.props.price}</div>
+             <div className="price">₱{this.props.price}</div>
           </div>
         </div>
       </div>

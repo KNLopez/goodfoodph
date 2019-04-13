@@ -41,7 +41,7 @@ export class Cart extends Component {
         { this.props.cartItems.length > 0 ?
           <div className="checkout" onClick={this.checkOut}>
               <div>Proceed to checkout</div>
-              <div>${  totalPrice }</div>
+              <div>₱{  totalPrice }</div>
           </div> :
           ''
         }
