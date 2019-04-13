@@ -5,6 +5,7 @@ nav * {
 nav {
   background: white;
   width: 100%;
+  box-shadow: 0 4px 34px rgba(185,191,214,0.26)
 }
 
 nav .nav-container {

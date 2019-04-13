@@ -32,7 +32,7 @@ const initalState = {
     {
       id: '4',
       img: 'cdn.shopify.com/s/files/1/0506/7861/products/2-Sweet-Paprika-Chicken-with-Super-Greens-Web-13.jpg?v=1554950492',
-      name: "Sweet Paprika Chicken with Super Greens - Meal Kitz (serves 2)",
+      name: "Sweet Chicken with Super Greens - Meal Kitz (serves 2)",
       price: 19.95,
       calories: 525,
       protein: 27.8,
@@ -44,20 +44,20 @@ const initalState = {
       img: 'cdn.shopify.com/s/files/1/0506/7861/products/3-Greek-Lamb-Salad-With-Toasted-Pita-Web-9.jpg?v=1554950489',
       name: "Greek Lamb Salad with Toasted Pita - Meal Kitz (serves 10)",
       price: 89.95,
-      Calories: 525,
-      Protein: 27.8,
-      Carbs: 27.8,
-      Fat: 23.5
+      calories: 525,
+      protein: 27.8,
+      carbs: 27.8,
+      fat: 23.5
     },
     {
       id: '6',
       img: 'cdn.shopify.com/s/files/1/0506/7861/products/3-Greek-Lamb-Salad-With-Toasted-Pita-Web-9.jpg?v=1554950489',
       name: "Thai Green Chicken Curry - Meal Kitz (serves 4)",
       price: 29.95,
-      Calories: 525,
-      Protein: 27.8,
-      Carbs: 27.8,
-      Fat: 23.5
+      calories: 525,
+      protein: 27.8,
+      carbs: 27.8,
+      fat: 23.5
     },
   ],
   cartItems: [],
