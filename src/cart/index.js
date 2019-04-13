@@ -5,8 +5,8 @@ export class Cart extends Component {
 
   render() {
     return (
-      <div>
-          HELLO
+      <div className="cart-container">
+
       </div>
     )
   }

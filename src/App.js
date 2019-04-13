@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import Cart from './cart'
 import Products from './products'
+import Contact from './pages/Contact'
 import Navbar from './navbar'
 import './App.css';
 
@@ -12,8 +13,9 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <Route exact path ='/' component={Products}/>
           <Cart />
+          <Route exact path ='/' component={ Products }/>
+          <Route path='/contact' component={ Contact }/>
         </div>
       </BrowserRouter>
     );
