@@ -70,3 +70,31 @@ nav ul li a.cart-active span {
   align-items: center;
   color: white;
 }
+
+@media only screen and (max-width: 768px){
+  nav {
+    position: fixed;
+    z-index: 999;
+  }
+  nav .logo input {
+    position: fixed;
+    width: 100%;
+    top: 91px;
+    left: 0;
+    border-top: 1px solid #eee;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+  }
+  nav .logo {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  nav .nav-container {
+    flex-direction: column;
+  }
+  nav ul {
+    padding: 0;
+  }
+}

@@ -90,3 +90,9 @@
   text-transform: uppercase;
   letter-spacing: .45px;
 }
+
+@media only screen and (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}

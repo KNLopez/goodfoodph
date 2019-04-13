@@ -32,7 +32,7 @@ export class Navbar extends Component {
             <ul>
               <li><NavLink to="/">OUR Menu</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
-              <li><a onClick={(e)=> this.handleClick(e)} className={this.props.cartItems.length > 0 ? 'cart-active':''}>Cart{totalQuantity > 0 ? <span>{totalQuantity}</span> : ''}</a></li>
+              <li><a onClick={(e)=> this.handleClick(e)} className={this.props.cartItems.length > 0 ? 'cart cart-active':'cart'}>Cart{totalQuantity > 0 ? <span>{totalQuantity}</span> : ''}</a></li>
             </ul>
           </div>
         </div>
