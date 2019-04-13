@@ -61,7 +61,8 @@ const initalState = {
     },
   ],
   cartItems: [],
-  userInfo: {}
+  userInfo: {},
+  showCart: false
 }
 
 const rootreducer = (state = initalState, action) => {
@@ -85,8 +86,12 @@ const rootreducer = (state = initalState, action) => {
           cartItems: [...state.cartItems, {
             ...state.products.filter(item => item.id === action.id)[0],
             qty: 1
-          }]
+          }], showCart: true
         }
+      }
+    case 'TOGGLE_CART':
+      return {
+        ...state, showCart: !state.showCart
       }
   }
   return state;

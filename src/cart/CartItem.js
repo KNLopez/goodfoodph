@@ -16,7 +16,7 @@ export class CartItem extends Component {
           <div className="cart-item__bottom-info">
              <div className="cart-controls">
               <button className="cart-controls__button">-</button>
-              <input type="text" onChange={(e)=>this.handleChange(e)} defaultValue={this.props.qty} />
+              <input type="text" onChange={(e)=>this.handleChange(e)} value={this.props.qty} />
               <button className="cart-controls__button">+</button>
              </div>
              <div className="price">{this.props.price}</div>

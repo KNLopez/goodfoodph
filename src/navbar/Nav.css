@@ -38,3 +38,23 @@ nav ul li a:hover {
   color: #54BB77;
   transition: .2s ease-in-out all;
 }
+
+nav ul li a.cart-active {
+  color: #54BB77;
+  position: relative;
+}
+
+nav ul li a.cart-active span {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  background: #54BB77;
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

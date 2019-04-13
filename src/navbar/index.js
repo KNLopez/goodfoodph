@@ -5,7 +5,18 @@ import './Nav.css';
 
 export class Navbar extends Component {
 
+  handleClick = (e) => {
+    this.props.toggleCart()
+  }
+
+  computeTotalQuantity = (cartItems) => {
+    let totalqty = 0;
+    cartItems.map(cartItem => totalqty += cartItem.qty)
+    return totalqty
+  }
+
   render() {
+    let totalQuantity = this.computeTotalQuantity(this.props.cartItems)
     return (
       <nav>
         <div className="nav-container">
@@ -16,7 +27,7 @@ export class Navbar extends Component {
             <ul>
               <li><NavLink to="/">OUR Menu</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
-              <li><a href="#" className="cart-toggle">Cart</a></li>
+              <li><a onClick={(e)=> this.handleClick(e)} className={this.props.cartItems.length > 0 ? 'cart-active':''}>Cart{totalQuantity > 0 ? <span>{totalQuantity}</span> : ''}</a></li>
             </ul>
           </div>
         </div>
@@ -26,11 +37,13 @@ export class Navbar extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  
+  cartItems: state.cartItems
 })
 
-const mapDispatchToProps = {
-  
+const mapDispatchToProps = (dispatch)=> {
+  return {
+    toggleCart: () => {dispatch({type: 'TOGGLE_CART' })}
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Navbar)

@@ -5,6 +5,7 @@ export default class ProductList extends Component {
   render() {
     const productList = this.props.products.map(product =>
       <ProductListItem
+        key={product.id}
         id={product.id}
         img={product.img}
         name={product.name}

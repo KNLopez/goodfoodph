@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 class ProductListItem extends Component {
   render() {
     return (
-      <div className="product-card">
+      <React.Fragment>
         <div key={this.props.id} className="product-card">
           <div className='product-image' style={{backgroundImage: `url(//${this.props.img})`}}>
             <div className="nutrition-container">
@@ -32,7 +32,7 @@ class ProductListItem extends Component {
             <button onClick={()=>{this.props.addToCart(this.props.id)}}> Add to Cart </button>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     )
   }
 }
