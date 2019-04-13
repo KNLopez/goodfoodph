@@ -13,8 +13,9 @@ export class Navbar extends Component {
         </div>
         <div className="menu-container">
           <ul>
-            <NavLink to="/">Menu</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <li><NavLink to="/">OUR Menu</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><a href="#" className="cart-toggle">Cart</a></li>
           </ul>
         </div>
       </nav>
