@@ -4,16 +4,24 @@ nav * {
 
 nav {
   background: white;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 4px 34px rgba(185,191,214,0.26)
 }
 
 nav .nav-container {
-  margin: 0 auto;
-  max-width: 1160px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav .logo input{
+  margin-left: 20px;
+  padding: 20px;
+  border: 0;
+  border-left: 1px solid #eee;
+  outline: 0;
+  width: 200px;
 }
 
 nav ul {

@@ -1,4 +1,5 @@
 const initalState = {
+  searchText:'',
   products: [{
       id: '1',
       img: 'cdn.shopify.com/s/files/1/0506/7861/products/1-Beef-Fajita-Wraps-With-Crunchy-Slaw-Web-12_720x.jpg?v=1554950480',
@@ -92,6 +93,11 @@ const rootreducer = (state = initalState, action) => {
     case 'TOGGLE_CART':
       return {
         ...state, showCart: !state.showCart
+      }
+    case 'FILTER_PRODUCTS':
+      return {
+        ...state,
+          searchText: action.searchText
       }
   }
   return state;

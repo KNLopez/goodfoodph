@@ -16,8 +16,8 @@ export class Products extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  products: state.products
+const mapStateToProps = ({products, searchText}) => ({
+  products: products.filter(product => product.name.includes(searchText))
 })
 
 

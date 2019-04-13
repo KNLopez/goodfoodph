@@ -15,6 +15,10 @@ export class Navbar extends Component {
     return totalqty
   }
 
+  filterProducts = (e) => {
+    this.props.filterProducts(e.target.value)
+  }
+
   render() {
     let totalQuantity = this.computeTotalQuantity(this.props.cartItems)
     return (
@@ -22,6 +26,7 @@ export class Navbar extends Component {
         <div className="nav-container">
           <div className="logo">
             GoodFoodPh
+            <input onChange={this.filterProducts} type="text" placeholder="Search Products"></input>
           </div>
           <div className="menu-container">
             <ul>
@@ -42,7 +47,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch)=> {
   return {
-    toggleCart: () => {dispatch({type: 'TOGGLE_CART' })}
+    toggleCart: () => {dispatch({type: 'TOGGLE_CART' })},
+    filterProducts: (searchText) => {dispatch({type: 'FILTER_PRODUCTS', searchText})}
   }
 }
 

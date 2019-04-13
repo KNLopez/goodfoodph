@@ -2,6 +2,7 @@
 * {
   font-family: 'Montserrat',
   sans-serif;
+  box-sizing: border-box;
 }
 
 h1,
@@ -21,4 +22,5 @@ a {
 
 body {
   background: #F6F8F8;
+  overflow-x: hidden; 
 }
