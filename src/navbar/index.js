@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-export class Cart extends Component {
+export class Navbar extends Component {
 
   render() {
     return (
       <div>
-          HELLO
+
       </div>
     )
   }
@@ -20,4 +20,4 @@ const mapDispatchToProps = {
   
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cart)
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar)

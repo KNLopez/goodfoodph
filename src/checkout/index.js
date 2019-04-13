@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export class Cart extends Component {
+export class Checkout extends Component {
+  static propTypes = {
+    prop: PropTypes
+  }
 
   render() {
     return (
       <div>
-          HELLO
+
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  
+
 })
 
 const mapDispatchToProps = {
   
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cart)
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout)
