@@ -15,6 +15,10 @@ nav .nav-container {
   align-items: center;
 }
 
+nav .logo {
+  color: #54BB77
+}
+
 nav .logo input{
   margin-left: 20px;
   padding: 20px;

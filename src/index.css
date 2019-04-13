@@ -24,3 +24,28 @@ body {
   background: #F6F8F8;
   overflow-x: hidden; 
 }
+
+.contact-us {
+  min-height: calc(100vh - 58px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
+  background: white;
+  text-align: center;
+  padding: 40px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #ccc;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+
+::placeholder {
+  color: #ccc;
+}

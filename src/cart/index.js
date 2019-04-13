@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { withRouter} from 'react-router-dom';
 import Cartheader from './Cartheader'
 import CartItemList from './CartItemList'
-import { browserHistory } from 'react-router-dom'
 import './Cart.css'
 
 export class Cart extends Component {
@@ -23,6 +23,12 @@ export class Cart extends Component {
     this.props.toggleCart()
   }
 
+  checkOut = (e) => {
+    this.props.checkOut()
+    this.props.history.push('/checkout')
+
+  }
+
   render() {
     let totalQuantity = this.computeTotalQuantity(this.props.cartItems)
     let totalPrice = this.computeTotalPrice(this.props.cartItems)
@@ -30,9 +36,11 @@ export class Cart extends Component {
     return (
       <div className={ this.props.showCart ? 'cart-container active' : 'cart-container'}>
         <Cartheader toggleCart={ this.handleClick} total={totalQuantity}/>
-        <CartItemList cartItems={this.props.cartItems}/>
+        {
+          this.props.cartItems.length > 0 ? <CartItemList cartItems={this.props.cartItems}/> : <div className="no-cart-items">Nothing here..</div>
+        }
         { this.props.cartItems.length > 0 ?
-          <div className="checkout">
+          <div className="checkout" onClick={this.checkOut}>
               <div>Proceed to checkout</div>
               <div>${  totalPrice }</div>
           </div> :
@@ -50,8 +58,9 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    toggleCart: () => {dispatch({type: 'TOGGLE_CART' })}
+    toggleCart: () => {dispatch({type: 'TOGGLE_CART' })},
+    checkOut: () => {dispatch({type: 'CHECKOUT'})}
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cart)
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Cart))

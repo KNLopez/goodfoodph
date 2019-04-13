@@ -63,7 +63,8 @@ const initalState = {
   ],
   cartItems: [],
   userInfo: {},
-  showCart: false
+  showCart: false,
+  total: 0
 }
 
 const rootreducer = (state = initalState, action) => {
@@ -90,6 +91,27 @@ const rootreducer = (state = initalState, action) => {
           }], showCart: true
         }
       }
+    case 'ADJUST_QUANTITY':
+      let sum;
+      state.cartItems.map(item=>{
+        if(item.id === action.data.id){
+           sum = item.qty + action.data.val
+        }
+      })
+      if(sum < 0){
+        return {...state, cartItems: state.cartItems.filter(item => 
+          item.id !== action.data.id
+        )}
+      } else {
+        return {
+          ...state, cartItems: state.cartItems.map(item => {
+              if(item.id === action.data.id){
+                  item.qty += action.data.val
+              }
+              return item
+          })
+        }
+      }
     case 'TOGGLE_CART':
       return {
         ...state, showCart: !state.showCart
@@ -98,6 +120,13 @@ const rootreducer = (state = initalState, action) => {
       return {
         ...state,
           searchText: action.searchText
+      }
+    case 'CHECKOUT':
+      let total;
+      state.cartItems.map(item=> total += (item.price * item.qty))
+      return {
+        ...state,
+          total
       }
   }
   return state;

@@ -108,6 +108,7 @@
   outline: 0;
   border: 0;
   padding: 0 7px;
+  cursor: pointer;
 }
 
 .checkout {
@@ -128,4 +129,10 @@
 
 .checkout div {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.no-cart-items {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
 }
