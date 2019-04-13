@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import CheckoutSummary from './CheckoutSummary'
-import OrderFrom from './OrderForm'
+import OrderForm from './OrderForm'
+import './Checkout.css'
 
 export class Checkout extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
+
 
   render() {
     return (
       <div className="checkout-container">
-
+        <OrderForm />
+        <CheckoutSummary />
       </div>
     )
   }

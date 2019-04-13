@@ -1,0 +1,33 @@
+.checkout-container {
+  display: flex;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.checkout-summary {
+  background: white;
+  padding: 40px;
+  flex: 1;
+}
+.contact-form {
+  flex: 2;
+  padding: 5%;
+  padding-right: 10%;
+}
+
+.contact-form input {
+  padding:10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  width: 100%;
+  background: #54BB77;
+  color: white;
+  border: 0;
+  padding: 15px;
+}

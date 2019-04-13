@@ -59,7 +59,7 @@ const initalState = {
       protein: 27.8,
       carbs: 27.8,
       fat: 23.5
-    },
+    }
   ],
   cartItems: [],
   userInfo: {},
@@ -122,11 +122,12 @@ const rootreducer = (state = initalState, action) => {
           searchText: action.searchText
       }
     case 'CHECKOUT':
-      let total;
-      state.cartItems.map(item=> total += (item.price * item.qty))
+      let total = 0;
+      state.cartItems.map(item=> {total += (item.price * item.qty)
+      })
       return {
         ...state,
-          total
+          total: parseFloat(Math.round(total * 100) / 100).toFixed(2)
       }
   }
   return state;
