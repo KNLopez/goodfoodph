@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import ProductList from './ProductList'
+import './Products.css'
 
 export class Products extends Component {
 
