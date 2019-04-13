@@ -55,6 +55,12 @@
   background: white;
 }
 
+.cart-item-list-container h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 .cart-item {
   display: flex;
   margin: 20px 0;
