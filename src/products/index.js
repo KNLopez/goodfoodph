@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import ProductList from './ProductList'
 
 export class Products extends Component {
 
   render() {
     return (
-      <div>
-      </div>
+      <React.Fragment>
+        <ProductList
+          products={this.props.products}
+        />
+      </React.Fragment>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  
+  products: state.products
 })
 
-const mapDispatchToProps = {
-  
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(Products)
+export default connect(mapStateToProps)(Products)
