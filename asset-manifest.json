@@ -1,14 +1,14 @@
 {
-  "main.css": "/goodfoodph/static/css/main.bf79e77a.chunk.css",
-  "main.js": "/goodfoodph/static/js/main.bcf973bc.chunk.js",
-  "main.js.map": "/goodfoodph/static/js/main.bcf973bc.chunk.js.map",
+  "main.css": "/goodfoodph/static/css/main.f76ca044.chunk.css",
+  "main.js": "/goodfoodph/static/js/main.7ba1fafb.chunk.js",
+  "main.js.map": "/goodfoodph/static/js/main.7ba1fafb.chunk.js.map",
   "runtime~main.js": "/goodfoodph/static/js/runtime~main.6c466545.js",
   "runtime~main.js.map": "/goodfoodph/static/js/runtime~main.6c466545.js.map",
   "static/js/2.57c36ffa.chunk.js": "/goodfoodph/static/js/2.57c36ffa.chunk.js",
   "static/js/2.57c36ffa.chunk.js.map": "/goodfoodph/static/js/2.57c36ffa.chunk.js.map",
   "index.html": "/goodfoodph/index.html",
-  "precache-manifest.031b71ac7febf252d34c9c07618cb3f8.js": "/goodfoodph/precache-manifest.031b71ac7febf252d34c9c07618cb3f8.js",
+  "precache-manifest.dc4295d3932e08cb07f4972234c498f6.js": "/goodfoodph/precache-manifest.dc4295d3932e08cb07f4972234c498f6.js",
   "service-worker.js": "/goodfoodph/service-worker.js",
-  "static/css/main.bf79e77a.chunk.css.map": "/goodfoodph/static/css/main.bf79e77a.chunk.css.map",
+  "static/css/main.f76ca044.chunk.css.map": "/goodfoodph/static/css/main.f76ca044.chunk.css.map",
   "static/media/arrow.35f39512.svg": "/goodfoodph/static/media/arrow.35f39512.svg"
 }
