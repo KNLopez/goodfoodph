@@ -8,6 +8,7 @@
 }
 
 .product-card {
+  cursor: pointer;
   background: white;
   box-shadow: 0 4px 34px rgba(185,191,214,0.26)
 }
@@ -53,4 +54,38 @@
 .product-info p {
   color: #888;
   margin-bottom: 10px;
+}
+
+.nutrition-container {
+  display: flex;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.2s ease-out all;
+}
+
+.product-card:hover .nutrition-container {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.2s ease-out all;
+}
+
+.nutrition {
+  text-align: center;
+  flex: 1;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.nutrition p {
+  margin: 0;
+}
+
+.nutrition .nutrition-label {
+  margin-top:5px;
+  color: #666;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .45px;
 }
