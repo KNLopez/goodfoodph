@@ -8,15 +8,17 @@ export class Navbar extends Component {
   render() {
     return (
       <nav>
-        <div className="logo">
-          GoodFoodPh
-        </div>
-        <div className="menu-container">
-          <ul>
-            <li><NavLink to="/">OUR Menu</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-            <li><a href="#" className="cart-toggle">Cart</a></li>
-          </ul>
+        <div className="nav-container">
+          <div className="logo">
+            GoodFoodPh
+          </div>
+          <div className="menu-container">
+            <ul>
+              <li><NavLink to="/">OUR Menu</NavLink></li>
+              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><a href="#" className="cart-toggle">Cart</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     )
