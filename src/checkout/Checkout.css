@@ -24,10 +24,12 @@
   border: 1px solid #ddd;
 }
 
-.contact-form button {
+.contact-form input[type="submit"] {
   width: 100%;
   background: #54BB77;
   color: white;
   border: 0;
   padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
 }

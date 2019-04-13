@@ -25,7 +25,7 @@ export class Navbar extends Component {
       <nav>
         <div className="nav-container">
           <div className="logo">
-            GoodFoodPh
+            <NavLink to="/">GoodFoodPh</NavLink>
             <input onChange={this.filterProducts} type="text" placeholder="Search Products"></input>
           </div>
           <div className="menu-container">

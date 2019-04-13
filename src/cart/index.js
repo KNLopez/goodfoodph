@@ -26,7 +26,6 @@ export class Cart extends Component {
   checkOut = (e) => {
     this.props.checkOut()
     this.props.history.push('/checkout')
-
   }
 
   render() {

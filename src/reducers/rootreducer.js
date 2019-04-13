@@ -127,7 +127,12 @@ const rootreducer = (state = initalState, action) => {
       })
       return {
         ...state,
-          total: parseFloat(Math.round(total * 100) / 100).toFixed(2)
+          total: parseFloat(Math.round(total * 100) / 100).toFixed(2),
+          showCart: false
+      }
+    case 'SUBMIT_FORM':
+      return {
+        ...state, userInfo: {...action.formData}
       }
   }
   return state;

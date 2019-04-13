@@ -15,7 +15,7 @@ nav .nav-container {
   align-items: center;
 }
 
-nav .logo {
+nav .logo a{
   color: #54BB77
 }
 
