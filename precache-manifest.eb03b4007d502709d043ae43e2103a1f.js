@@ -8,7 +8,7 @@ self.__precacheManifest = [
     "url": "/goodfoodph/static/js/runtime~main.6c466545.js"
   },
   {
-    "revision": "b9698b01b1959bd4547e",
+    "revision": "fc2fe5fdb3c5b798c6b6",
     "url": "/goodfoodph/static/js/main.7ba1fafb.chunk.js"
   },
   {
@@ -16,11 +16,11 @@ self.__precacheManifest = [
     "url": "/goodfoodph/static/js/2.57c36ffa.chunk.js"
   },
   {
-    "revision": "b9698b01b1959bd4547e",
-    "url": "/goodfoodph/static/css/main.32aa0c75.chunk.css"
+    "revision": "fc2fe5fdb3c5b798c6b6",
+    "url": "/goodfoodph/static/css/main.199fa616.chunk.css"
   },
   {
-    "revision": "783643300614c6f4abf014aface5a2ac",
+    "revision": "7085a3fd7d3491eea883d2bb535e0810",
     "url": "/goodfoodph/index.html"
   }
 ];
