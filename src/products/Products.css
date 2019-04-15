@@ -1,9 +1,20 @@
+
+.products-container{
+  width: 100vw;
+  padding: 40px;
+  display: flex;
+}
+
+.product-filter{
+  width: 200px;
+}
+
 .product-list {
-  padding: 40px 20px;
+  flex: 1;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr;
-  grid-gap: 30px 5%;
-  width: 100vw;
+  grid-gap: 30px 2%;
+  width: 1005;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -11,7 +22,9 @@
 .product-card {
   cursor: pointer;
   background: white;
-  box-shadow: 0 4px 34px rgba(185,191,214,0.26)
+  box-shadow: 0 4px 34px rgba(185,191,214,0.26);
+  display: flex;
+  flex-direction: column;
 }
 
 .product-image {
@@ -23,15 +36,18 @@
 
 .product-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .product-info button {
+  margin-top: auto;
   border-radius: 2px;
   border: 1px solid #ccc;
   background: white;
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
   text-transform: uppercase; 
   cursor: pointer;
   transition: 0.2s ease-in-out all;
@@ -54,7 +70,7 @@
 }
 .product-info p {
   color: #888;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .nutrition-container {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import ProductList from './ProductList'
+import ProductFilter from './ProductFilter'
 import './Products.css'
 
 export class Products extends Component {
@@ -22,11 +23,12 @@ export class Products extends Component {
     let filtered_products = this.filterProducts(this.props.products, this.props.filter)
 
     return (
-      <React.Fragment>
+      <div className="products-container">
+        <ProductFilter />
         <ProductList
           products={ filtered_products }
         />
-      </React.Fragment>
+      </div>
     )
   }
 }
