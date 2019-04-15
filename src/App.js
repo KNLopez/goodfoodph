@@ -16,7 +16,7 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Cart />
-          <Route exact path ='/' component={ Products } />
+          <Route exact path ={process.env.PUBLIC_URL + '/'} component={ Products } />
           <Route path='/contact' component={ Contact } />
           <Route path='/checkout' component={ Checkout } />
           <Route path='/results' component={ CheckoutResults } />
