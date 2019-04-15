@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/goodfoodph/static/js/runtime~main.6c466545.js"
   },
   {
-    "revision": "554a01a73bd673e1d319",
-    "url": "/goodfoodph/static/js/main.6aab26ff.chunk.js"
+    "revision": "5226d916ab0d77241f4c",
+    "url": "/goodfoodph/static/js/main.77038814.chunk.js"
   },
   {
     "revision": "0195e5e80d1097f96b71",
     "url": "/goodfoodph/static/js/2.80f7c3e6.chunk.js"
   },
   {
-    "revision": "554a01a73bd673e1d319",
+    "revision": "5226d916ab0d77241f4c",
     "url": "/goodfoodph/static/css/main.a4472e5a.chunk.css"
   },
   {
-    "revision": "050b38f4cce45b24ea28752a6c3bba3e",
+    "revision": "63feb39dddd5652f24049dd7b367a5ab",
     "url": "/goodfoodph/index.html"
   }
 ];
