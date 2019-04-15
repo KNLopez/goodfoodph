@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/goodfoodph/precache-manifest.dffae4a19bf70995afacde095e5be578.js"
+  "/goodfoodph/precache-manifest.bc55297314187170a795b1cd9d89237c.js"
 );
 
 workbox.clientsClaim();
