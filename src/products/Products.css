@@ -107,6 +107,15 @@
   letter-spacing: .45px;
 }
 
+/* filter */
+.product-filter__inner{
+  position: fixed;
+}
+
+.checkbox-container {
+  margin: 10px 0;
+}
+
 @media only screen and (max-width: 768px) {
   .product-list {
     padding-top: 150px;

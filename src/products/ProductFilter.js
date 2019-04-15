@@ -12,13 +12,16 @@ export class ProductFilter extends Component {
 
   render() {
     const checkboxes = this.props.tags.map((tag, i) =>
-      <div key={i}>
+      <div className="checkbox-container" key={i}>
         <input onChange={this.handleClick} type="checkbox" name={tag} value={tag}/> {tag}
       </div>
     )
     return (
       <div className="product-filter">
-        {checkboxes}
+        <div className="product-filter__inner">
+          <h3>FILTERS</h3>
+          {checkboxes}
+        </div>
       </div>
     )
   }

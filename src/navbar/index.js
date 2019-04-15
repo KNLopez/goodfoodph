@@ -48,7 +48,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch)=> {
   return {
     toggleCart: () => {dispatch({type: 'TOGGLE_CART' })},
-    filterProducts: (searchText) => {dispatch({type: 'FILTER_PRODUCTS', searchText})}
+    filterProducts: (searchText) => {dispatch({type: 'SEARCH_FILTER_PRODUCTS', searchText})}
   }
 }
 
