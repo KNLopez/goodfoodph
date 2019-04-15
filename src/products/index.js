@@ -6,12 +6,16 @@ import './Products.css'
 export class Products extends Component {
 
   filterProducts = (products, filter) => {
-    return products.reduce((accProducts, product) => {
-      if(product.tags.filter(tag=> filter.tagsFilter.includes(tag)).length>0 && product.name.toLowerCase().includes(filter.searchText.toLowerCase())) {
-        accProducts.push(product)
-      }
-      return accProducts
-    }, [])
+    if(filter.tagsFilter.length > 0){
+      return products.reduce((accProducts, product) => {
+        if(product.tags.filter(tag=> filter.tagsFilter.includes(tag)).length>0 && product.name.toLowerCase().includes(filter.searchText.toLowerCase())) {
+          accProducts.push(product)
+        }
+        return accProducts
+      }, [])
+    } else {
+      return products.filter(product =>product.name.toLowerCase().includes(filter.searchText.toLowerCase()))
+    }
   }
 
   render() {
