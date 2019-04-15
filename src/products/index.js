@@ -5,19 +5,31 @@ import './Products.css'
 
 export class Products extends Component {
 
+  filterProducts = (products, filter) => {
+    return products.reduce((accProducts, product) => {
+      if(product.tags.filter(tag=> filter.tagsFilter.includes(tag)).length>0 && product.name.toLowerCase().includes(filter.searchText.toLowerCase())) {
+        accProducts.push(product)
+      }
+      return accProducts
+    }, [])
+  }
+
   render() {
+    let filtered_products = this.filterProducts(this.props.products, this.props.filter)
+
     return (
       <React.Fragment>
         <ProductList
-          products={this.props.products}
+          products={ filtered_products }
         />
       </React.Fragment>
     )
   }
 }
 
-const mapStateToProps = ({products, searchText}) => ({
-  products: products.filter(product => product.name.includes(searchText))
+const mapStateToProps = ({ products, filter }) => ({
+  products: products,
+  filter: filter
 })
 
 
