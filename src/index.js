@@ -8,13 +8,15 @@ import { Provider } from 'react-redux'
 import rootreducer from './reducers/rootreducer'
 import { loadState, saveState } from './localStorage'
 
-const persistedState = loadState()
+const persistedState = {
+  cart: loadState()
+}
 const store = createStore(
   rootreducer,
   persistedState,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
-console.log(store.getState())
+
 store.subscribe(()=>{
   saveState(store.getState({
     cart: store.getState().cart
