@@ -17,8 +17,8 @@ export class CheckoutResult extends Component {
   }
 }
 
-const mapStateToProps = ({ cartItems, userInfo, total}) => ({
-  state: { cartItems, userInfo, total }
+const mapStateToProps = ({ cart, filters }) => ({
+  state: { cartItems: cart.cartItems, userInfo: filters.userInfo , total:cart.total }
 })
 
 const mapDispatchToProps = {

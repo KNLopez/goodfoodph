@@ -30,8 +30,8 @@ export class CheckoutSummary extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  cart: state.cartItems,
-  total: state.total
+  cart: state.cart.cartItems,
+  total: state.cart.total
 })
 
 const mapDispatchToProps = {
