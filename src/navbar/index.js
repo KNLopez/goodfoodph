@@ -42,7 +42,7 @@ export class Navbar extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  cartItems: state.cartItems
+  cartItems: state.cart.cartItems
 })
 
 const mapDispatchToProps = (dispatch)=> {

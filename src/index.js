@@ -6,11 +6,20 @@ import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import rootreducer from './reducers/rootreducer'
+import { loadState, saveState } from './localStorage'
 
+const persistedState = loadState()
 const store = createStore(
   rootreducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  persistedState
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
+console.log(store.getState())
+store.subscribe(()=>{
+  saveState(store.getState({
+    cart: store.getState().cart
+  }))
+})
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

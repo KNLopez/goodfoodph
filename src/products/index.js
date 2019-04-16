@@ -33,9 +33,9 @@ export class Products extends Component {
   }
 }
 
-const mapStateToProps = ({ products, filter }) => ({
+const mapStateToProps = ({ products, filters }) => ({
   products: products,
-  filter: filter
+  filter: filters
 })
 
 
