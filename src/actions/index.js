@@ -39,9 +39,9 @@ export function submitForm(formData) {
   }
 }
 
-export function adjustQuantity(quantity) {
+export function adjustQuantity(data) {
   return {
     type: 'ADJUST_QUANTITY',
-    quantity
+    data
   }
 }
