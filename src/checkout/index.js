@@ -17,12 +17,5 @@ export class Checkout extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
 
-})
-
-const mapDispatchToProps = {
-
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Checkout)
+export default Checkout

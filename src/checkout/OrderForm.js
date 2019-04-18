@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import { submitForm } from '../actions'
 
 export class OrderForm extends Component {
 
@@ -39,7 +40,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    submitForm: (formData) => {dispatch({type: 'SUBMIT_FORM', formData })}
+    submitForm: (formData) => {dispatch(submitForm(formData))}
    }
 }
 

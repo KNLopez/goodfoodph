@@ -8,8 +8,8 @@ export const userInfo = {}
 export const productState = [
   {
     id: '1',
-    img: 'cdn.shopify.com/s/files/1/0506/7861/products/1-Beef-Fajita-Wraps-With-Crunchy-Slaw-Web-12_720x.jpg?v=1554950480',
-    name: "Beef Fajita Wraps with Crunchy Slaw - Meal Kitz (serves 2)",
+    img: 'images.pexels.com/photos/461198/pexels-photo-461198.jpeg?cs=srgb&dl=burrito-chicken-close-up-461198.jpg&fm=jpg?w=640&h=426',
+    name: "Beef Fajita Wraps with Crunchy Slaw - Meal   (serves 2)",
     price: 19.95,
     calories: 525,
     protein: 27.8,
@@ -19,8 +19,8 @@ export const productState = [
   },
   {
     id: '2',
-    img: 'cdn.shopify.com/s/files/1/0506/7861/products/3-Chicken-Stir-Fry-With-Cashew-Nuts-Web-14_720x.jpg?v=1554950483',
-    name: "Chicken Stir Fry with Cashew Nuts - Meal Kitz (serves 2)",
+    img: 'images.pexels.com/photos/1440119/pexels-photo-1440119.jpeg?cs=srgb&dl=close-up-cucumber-cuisine-1440119.jpg&fm=jpg?w=640&h=426',
+    name: "Chicken Stir Fry with Cashew Nuts - Meal   (serves 2)",
     price: 19.25,
     calories: 525,
     protein: 27.8,
@@ -30,19 +30,19 @@ export const productState = [
   },
   {
     id: '3',
-    img: 'cdn.shopify.com/s/files/1/0506/7861/products/1-Creamy-Gnocchi-Florentine-Web-13_720x.jpg?v=1554950486',
-    name: "Creamy Gnocchi Florentine - Meal Kitz (serves 2)",
+    img: 'images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?cs=srgb&dl=basil-blur-cheese-1279330.jpg&fm=jpg?w=640&h=426',
+    name: "Creamy Pasta Florentine - Meal (serves 2)",
     price: 19.25,
     calories: 525,
     protein: 27.8,
     carbs: 27.8,
     fat: 23.5,
-    tags: ['creamy', 'gnocchi' , 'pasta']
+    tags: ['creamy' , 'pasta']
   },
   {
     id: '4',
-    img: 'cdn.shopify.com/s/files/1/0506/7861/products/2-Sweet-Paprika-Chicken-with-Super-Greens-Web-13.jpg?v=1554950492',
-    name: "Sweet Chicken with Super Greens - Meal Kitz (serves 2)",
+    img: 'images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?cs=srgb&dl=buffet-chicken-cooking-5938.jpg&fm=jpg?w=640&h=426',
+    name: "Sweet Chicken with Super Greens - Meal   (serves 2)",
     price: 19.95,
     calories: 525,
     protein: 27.8,
@@ -52,8 +52,8 @@ export const productState = [
   },
   {
     id: '5',
-    img: 'cdn.shopify.com/s/files/1/0506/7861/products/3-Greek-Lamb-Salad-With-Toasted-Pita-Web-9.jpg?v=1554950489',
-    name: "Greek Lamb Salad with Toasted Pita - Meal Kitz (serves 10)",
+    img: 'images.pexels.com/photos/323682/pexels-photo-323682.jpeg?cs=srgb&dl=beef-blur-chicken-323682.jpg&fm=jpg?w=640&h=426',
+    name: "Greek Lamb Salad with Toasted Pita - Meal   (serves 10)",
     price: 89.95,
     calories: 525,
     protein: 27.8,
@@ -63,14 +63,14 @@ export const productState = [
   },
   {
     id: '6',
-    img: 'cdn.shopify.com/s/files/1/0506/7861/products/3-Greek-Lamb-Salad-With-Toasted-Pita-Web-9.jpg?v=1554950489',
-    name: "Thai Green Chicken Curry - Meal Kitz (serves 4)",
+    img: 'images.pexels.com/photos/675951/pexels-photo-675951.jpeg?cs=srgb&dl=asparagus-barbecue-bbq-675951.jpg&fm=jpg?w=640&h=426',
+    name: "Beef Steak with Sauce - Meal   (serves 4)",
     price: 29.95,
     calories: 525,
     protein: 27.8,
     carbs: 27.8,
     fat: 23.5,
-    tags: ['chicken', 'thai' , 'curry']
+    tags: ['beef', 'steak' ]
   }
 ]
 

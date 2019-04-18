@@ -21,8 +21,5 @@ const mapStateToProps = ({ cart, filters }) => ({
   state: { cartItems: cart.cartItems, userInfo: filters.userInfo , total:cart.total }
 })
 
-const mapDispatchToProps = {
-  
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(CheckoutResult)
+export default connect(mapStateToProps)(CheckoutResult)

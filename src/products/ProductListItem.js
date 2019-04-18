@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { addToCart } from '../actions'
 
 class ProductListItem extends Component {
   render() {
@@ -39,7 +40,7 @@ class ProductListItem extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addToCart: (id) => { dispatch({type: 'ADD_TO_CART', id })}
+    addToCart: (id) => { dispatch(addToCart(id))}
   }
 }
 

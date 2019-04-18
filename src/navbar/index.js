@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from "react-router-dom"
+import { toggleCart, searchFilter } from '../actions'
 import './Nav.css';
 
 export class Navbar extends Component {
@@ -47,8 +48,8 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch)=> {
   return {
-    toggleCart: () => {dispatch({type: 'TOGGLE_CART' })},
-    filterProducts: (searchText) => {dispatch({type: 'SEARCH_FILTER_PRODUCTS', searchText})}
+    toggleCart: () => {dispatch(toggleCart())},
+    filterProducts: (searchText) => {dispatch(searchFilter(searchText))}
   }
 }
 

@@ -51,8 +51,7 @@ const cart = (state = { ...cartState, productState} , action) => {
         }
       case 'CHECKOUT':
         let total = 0;
-        state.cartItems.map(item=> {total += (item.price * item.qty)
-        })
+        state.cartItems.map(item=> total += (item.price * item.qty))
         return {
           ...state,
             total: parseFloat(Math.round(total * 100) / 100).toFixed(2),

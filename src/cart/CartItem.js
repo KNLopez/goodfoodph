@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { adjustQuantity } from '../actions'
 
 export class CartItem extends Component {
 
@@ -36,7 +37,7 @@ export class CartItem extends Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    adjustQuantity: (data) => {dispatch({type: 'ADJUST_QUANTITY', data})}
+    adjustQuantity: (data) => {dispatch(adjustQuantity(data))}
   }
 }
 

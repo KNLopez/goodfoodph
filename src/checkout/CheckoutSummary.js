@@ -34,8 +34,5 @@ const mapStateToProps = (state) => ({
   total: state.cart.total
 })
 
-const mapDispatchToProps = {
-  
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(CheckoutSummary)
+export default connect(mapStateToProps)(CheckoutSummary)
