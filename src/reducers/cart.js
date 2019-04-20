@@ -25,12 +25,12 @@ const cart = (state = { ...cartState, productState} , action) => {
         }
       }
     case 'ADJUST_QUANTITY':
-      let sum;
-      state.cartItems.map(item=>{
+      const sum = state.cartItems.reduce((acc,item)=>{
         if(item.id === action.data.id){
-           sum = item.qty + action.data.val
+          acc = item.qty + action.data.val
         }
-      })
+        return acc
+      },0)
       if(sum < 0){
         return {...state, cartItems: state.cartItems.filter(item => 
           item.id !== action.data.id
