@@ -1,47 +1,49 @@
-export function addTag(tag) {
+import * as actionTypes from './actionTypes'
+
+export const addTag =(tag) => {
   return {
-    type: 'ADD_TAG',
+    type: actionTypes.ADD_TAG,
     tag
   }
 }
 
-export function removeTag(tag) {
+export const removeTag = (tag) => {
   return {
-    type: 'REMOVE_TAG',
+    type: actionTypes.REMOVE_TAG,
     tag
   }
 }
 
-export function addToCart(id) {
+export const addToCart = (id) => {
   return {
-    type: 'ADD_TO_CART',
+    type: actionTypes.ADD_TO_CART,
     id
   }
 }
 
-export function toggleCart() {
+export const toggleCart = () => {
   return {
-    type: 'TOGGLE_CART'
+    type: actionTypes.TOGGLE_CART
   }
 }
 
-export function searchFilter(searchText) {
+export const searchFilter = (searchText) => {
   return {
-    type: 'SEARCH_FILTER_PRODUCTS',
+    type: actionTypes.SEARCH_FILTER_PRODUCTS,
     searchText
   }
 }
 
-export function submitForm(formData) {
+export const submitForm = (formData) => {
   return {
-    type: 'SUBMIT_FORM',
+    type: actionTypes.SUBMIT_FORM,
     formData
   }
 }
 
-export function adjustQuantity(data) {
+export const adjustQuantity = (data) => {
   return {
-    type: 'ADJUST_QUANTITY',
+    type: actionTypes.ADJUST_QUANTITY,
     data
   }
 }
