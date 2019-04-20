@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom';
-import { submitForm } from '../actions'
+import { submitForm } from '../store/actions'
 
 export class OrderForm extends Component {
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { NavLink } from "react-router-dom"
-import { toggleCart, searchFilter } from '../actions'
+import { toggleCart, searchFilter } from '../store/actions'
 import './Nav.css';
 
 export class Navbar extends Component {

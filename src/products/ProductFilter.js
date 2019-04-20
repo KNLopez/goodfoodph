@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addTag, removeTag } from '../actions'
+import { addTag, removeTag } from '../store/actions'
 
 export class ProductFilter extends Component {
   handleClick = (e) => {

@@ -32,7 +32,7 @@ const cart = (state = { ...cartState, productState} , action) => {
         return acc
       },0)
       if(sum < 0){
-        return {...state, cartItems: state.cartItems.filter(item => 
+        return {...state, cartItems: state.cartItems.filter(item =>
           item.id !== action.data.id
         )}
       } else {

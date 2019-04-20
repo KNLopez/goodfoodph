@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { adjustQuantity } from '../actions'
+import { adjustQuantity } from '../store/actions'
 
 export class CartItem extends Component {
 
